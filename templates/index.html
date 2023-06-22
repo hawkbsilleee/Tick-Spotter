@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<!-- {% block title %}Home Page{% endblock %} -->
+{% block content %}
+<img src="static/imgs/tickspotterlogolarge.png" alt="tickspotterlogosmall" />
+
+
+<div class="uploader-div">
+  <form method=post enctype=multipart/form-data>
+    <label for="file-upload" class="custom-file-upload">
+      <i class="fa fa-cloud-upload"></i> Scan
+    </label>
+    <!-- Changed next line from file to file-upload -->
+    <input id="file-upload" type="file" name=file accept=".jpg, .jpeg" onchange="this.form.submit()">
+    <!-- <input type=submit value=Upload> -->
+</div>
+
+<!-- Old Version: -->
+<!-- <div class="uploader-div">
+  <form method=post enctype=multipart/form-data>
+    <input type=file name=file accept=".jpg, .jpeg">
+    <input type=submit value=Upload>
+</div> -->
+{% endblock %}

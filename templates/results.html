@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Results{% endblock %}
+{% block content %}
+<h1>{{ prediction }}</h1>
+<h1>{{ certainty }}</h1>
+<img src={{img_file}} alt="input photo" />
+{% endblock %}
