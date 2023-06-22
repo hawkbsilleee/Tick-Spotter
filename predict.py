@@ -5,7 +5,8 @@ from PIL import Image
 import numpy as np
 import keras
 
-MODEL_PATH = '/Volumes/My Passport/weights/5-25-23_BasicCNN_50epochs'
+MODEL_PATH = 'weights/5-25-23_BasicCNN_50epochs'
+# '/Volumes/My Passport/weights/5-25-23_BasicCNN_50epochs'
 # 'weights/5-25-23_BasicCNN_50epochs' 
 #'/Volumes/My Passport/weights/5-24-23_BasicCNNTest'
 model = keras.models.load_model(MODEL_PATH)
