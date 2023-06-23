@@ -1,3 +1,4 @@
 weights/
 uploads/
 static/imgs
+__pycache__/
