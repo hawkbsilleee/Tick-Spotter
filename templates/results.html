@@ -1,7 +1,29 @@
 {% extends "base.html" %}
 {% block title %}Results{% endblock %}
 {% block content %}
-<h1>{{ prediction }}</h1>
-<h1>{{ certainty }}</h1>
-<img src={{img_file}} alt="input photo" />
+<h1 id="results-title">Results</h1>
+<div class="row g-0 text-center">
+    <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+<!-- <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        Species
+      </div>
+      <div class="col">
+        {{ prediction }}
+      </div>
+    </div>
+</div>
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+        description
+        </div>
+    </div>
+</div> -->
+<!-- <p class="results-details">{{ prediction }}</p>
+<p class="results-details">{{ certainty }}</p> -->
+<img src={{img_file}} alt="input photo"/>
 {% endblock %}

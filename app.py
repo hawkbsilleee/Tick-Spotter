@@ -7,7 +7,7 @@ from predict import predictor
 app = Flask(__name__)
 
 # Folder path for image uploads
-UPLOAD_FOLDER = '/Users/ethan.seiz24/Desktop/TICKSPOTTERWEBSITE/uploads'
+UPLOAD_FOLDER = '/Users/ethan.seiz24/Desktop/TickSpotter/TICK-SPOTTER-WEBSITE/uploads'
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg'}
 # randomly generated encryption key 
 SECRET_KEY = os.urandom(24).hex()
@@ -24,6 +24,7 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # routes to home page 
+@app.route('/home')
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -63,6 +64,7 @@ def upload_file():
             img_file="uploads/"+filename) 
     # otherwise render the upload template form 
     return render_template('upload.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)

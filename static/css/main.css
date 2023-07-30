@@ -11,58 +11,11 @@ img{
     padding-top: 50px;
 }
 
-/* .uploader-div{
-    position: absolute;
-    width: 425px;
-    border: 15px solid rgb(237, 47, 47);
-    padding: 10px;
-    margin: 20px;
-    left: 450px;
-    top: 525px;
-} */
-
-/* label{
-    position: relative;
-    color:white;
-    height: 60px;
-    width: 150px;
-    background-color: rgb(237, 47, 47);
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-} */
-
-/* button {
-    position: relative;
-    color: white;
-    height: 60px;
-    width: 150px;
-    background-color: rgb(237, 47, 47); 
-    border-color: rgb(237, 47, 47);
-    border-radius: 5px;
-    font-size: 25px;
-    margin: auto; 
-    bottom: 100px;
-    left: 0; 
-} */
-
-/* #upload {
-    color: blue;
-} */
-
 input[type="file"] {
     display: none;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .custom-file-upload {
     background-color: rgb(237, 47, 47);
@@ -80,4 +33,17 @@ input[type="file"] {
 
 .custom-file-upload:hover {
     background-color: rgb(218, 30, 30);
+}
+
+#results-title {
+    text-align: center;
+}
+
+.results-details {
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+}
+
+.col {
+    text-align: left;
 }
